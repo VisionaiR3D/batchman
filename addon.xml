@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.batchman"
+       name="Batch‑Man"
+       version="1.0"
+       provider-name="Maart">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Batch-Man Filemanager</summary>
+        <description>Batch-Man plugin is a batch file manager. Designed to quickly delete and move movies and tvshows from internal to external storage (and vise versa). Optionally run a custom command after batch operation. </description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <settings file="resources/settings.xml"/>
+    </extension>
+</addon>

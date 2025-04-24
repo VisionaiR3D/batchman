@@ -1,0 +1,65 @@
+<settings>
+  <category label="Batch-Man settings">
+    <!--  Movies  -->
+    <setting id="path1"
+             type="text"
+             label="Internal Storage Movies Location"
+             default="/storage/emulated/0/Download/Movies"
+             browse="directories" />
+
+    <setting id="path2"
+             type="text"
+             label="External Storage Movies Location"
+             default="/storage/FCF3-6675/NVIDIA_SHIELD/MEDIA/MOVIES"
+             browse="directories" />
+
+    <!--  TV Shows  -->
+    <setting id="tvpath1"
+             type="text"
+             label="Internal Storage TV Location"
+             default="/storage/emulated/0/Download/TV Shows"
+             browse="directories" />
+
+    <setting id="tvpath2"
+             type="text"
+             label="External Storage TV Location"
+             default="/storage/FCF3-6675/NVIDIA_SHIELD/MEDIA/TVSHOWS"
+             browse="directories" />
+
+    <!--  Optional: thumbnails  -->
+    <setting id="use_thumbnails"
+             type="bool"
+             label="Use thumbnails"
+             default="true" />
+
+    <!--  Optional: allow deletion  -->
+    <setting id="allow_delete"
+             type="bool"
+             label="Allow Deletion"
+             default="true" />
+
+    <!--  Optional: Switch GUI from External USB to Network  -->
+    <setting id="switch_to_network"
+             type="bool"
+             label="Switch GUI from External USB to Network Location"
+             default="false" />
+
+    <!--  Enable custom action -->
+    <setting id="use_custom_action"
+             type="bool"
+             label="Enable Custom Action"
+             default="true" />
+
+    <!--  Custom Action Name -->
+    <setting id="custom_action_label"
+             type="text"
+             label="Custom Action Name"
+             default="Update Kodi Library" />
+
+    <!--  Custom Action Command (any xbmc.executebuiltin command) -->
+    <setting id="custom_action_command"
+             type="text"
+             label="Custom Action Command"
+             default="UpdateLibrary(video)" />
+  </category>
+</settings>
